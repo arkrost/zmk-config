@@ -74,7 +74,7 @@
             bindings = <
 &trans     &trans  &trans  &trans  &trans  &trans    &kp HOME  &kp PAGE_UP     &kp PAGE_DOWN  &kp END          &kp MINUS             &kp PLUS
 &trans     &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &kp NON_US_BACKSLASH  &kp PIPE
-&kp TILDE  &trans  &trans  &trans  &trans  &trans    &trans    &trans          &trans         &trans           &kp UNDER             &kp EQUAL
+&kp TILDE  &trans  &trans  &trans  &trans  &trans    &trans    &trans          &kp LT         &kp GT           &kp UNDER             &kp EQUAL
                            &trans  &trans  &trans    &trans    &trans          &trans
             >;
         };
