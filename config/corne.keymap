@@ -72,9 +72,9 @@
             //                                   '--------+----------+----------'       '---------+----------+---------'
 
             bindings = <
-&trans     &trans  &trans  &trans  &trans         &trans              &kp HOME              &kp PAGE_UP            &kp PAGE_DOWN  &kp END          &kp MINUS  &kp PLUS
-&trans     &trans  &trans  &trans  &trans         &trans              &kp LEFT              &kp DOWN_ARROW         &kp UP_ARROW   &kp RIGHT_ARROW  &trans     &kp PIPE
-&kp TILDE  &trans  &trans  &trans  &kp LESS_THAN  &kp GREATER_THAN    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans         &trans           &kp UNDER  &kp EQUAL
+&trans     &trans  &trans  &trans  &trans         &trans              &kp HOME              &kp PAGE_DOWN          &kp PAGE_UP   &kp END          &kp MINUS  &kp PLUS
+&trans     &trans  &trans  &trans  &trans         &trans              &kp LEFT              &kp DOWN_ARROW         &kp UP_ARROW  &kp RIGHT_ARROW  &trans     &kp PIPE
+&kp TILDE  &trans  &trans  &trans  &kp LESS_THAN  &kp GREATER_THAN    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans        &trans           &kp UNDER  &kp EQUAL
                            &trans  &trans         &trans              &trans                &trans                 &trans
             >;
         };
