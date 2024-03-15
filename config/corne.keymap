@@ -24,16 +24,6 @@
             key-positions = <20 21>;
         };
 
-        combo_enter {
-            bindings = <&kp ENTER>;
-            key-positions = <19 20>;
-        };
-
-        combo_backspace {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <8 9>;
-        };
-
         combo_lcmd {
             bindings = <&kp LEFT_COMMAND>;
             key-positions = <13 14>;
@@ -49,9 +39,9 @@
             key-positions = <32 33>;
         };
 
-        combo_esc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <2 3>;
+        combo_adjust_layer {
+            bindings = <&mo 3>;
+            key-positions = <38 37>;
         };
     };
 
@@ -92,7 +82,7 @@
 &trans  &kp N1    &kp N2  &kp N3    &kp N4    &kp N5       &kp N6            &kp N7    &kp N8     &kp N9    &kp N0    &trans
 &trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET         &kp AMPS  &kp STAR   &kp LPAR  &kp RPAR  &trans
 &trans  &trans    &trans  &trans    &trans    &trans       &trans            &trans    &trans     &trans    &trans    &kp LSHIFT
-                          &trans    &mo 3     &trans       &kp LEFT_COMMAND  &kp LALT  &kp LCTRL
+                          &trans    &trans    &trans       &kp LEFT_COMMAND  &kp LALT  &kp LCTRL
             >;
         };
 
