@@ -19,37 +19,37 @@
     combos {
         compatible = "zmk,combos";
 
-        kl {
+        combo_rcmd {
             bindings = <&kp LEFT_COMMAND>;
             key-positions = <20 21>;
         };
 
-        jk {
+        combo_enter {
             bindings = <&kp ENTER>;
             key-positions = <19 20>;
         };
 
-        io {
+        combo_backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <8 9>;
         };
 
-        sd {
+        combo_lcmd {
             bindings = <&kp LEFT_COMMAND>;
             key-positions = <13 14>;
         };
 
-        xc {
+        combo_lalt {
             bindings = <&kp LEFT_ALT>;
             key-positions = <26 27>;
         };
 
-        comma_period {
+        combo_ralt {
             bindings = <&kp LEFT_ALT>;
             key-positions = <32 33>;
         };
 
-        we {
+        combo_esc {
             bindings = <&kp ESCAPE>;
             key-positions = <2 3>;
         };
@@ -70,10 +70,10 @@
             //                                   '--------+---------+---------'       '-------+---------+---------'
 
             bindings = <
-&gresc            &kp Q  &kp W  &kp E                 &kp R                 &kp T    &kp Y  &kp U        &kp I                &kp O    &kp P          &kp BACKSPACE
-&kp LEFT_CONTROL  &kp A  &kp S  &kp D                 &kp F                 &kp G    &kp H  &kp J        &kp K                &kp L    &kp SEMICOLON  &kp SQT
-&kp LEFT_SHIFT    &kp Z  &kp X  &kp C                 &kp V                 &kp B    &kp N  &kp M        &kp COMMA            &kp DOT  &kp FSLH       &kp ENTER
-                                &mt LEFT_COMMAND TAB  &mt LEFT_SHIFT SPACE  &mo 1    &mo 2  &lt 4 SPACE  &mt LEFT_ALT ESCAPE
+&gresc            &kp Q               &kp W  &kp E                 &kp R                 &kp T    &kp Y  &kp U        &kp I                &kp O    &kp P                       &kp BACKSPACE
+&kp LEFT_CONTROL  &mt LEFT_CONTROL A  &kp S  &kp D                 &kp F                 &kp G    &kp H  &kp J        &kp K                &kp L    &mt LEFT_CONTROL SEMICOLON  &kp SQT
+&kp LEFT_SHIFT    &mt LEFT_SHIFT Z    &kp X  &kp C                 &kp V                 &kp B    &kp N  &kp M        &kp COMMA            &kp DOT  &mt LEFT_SHIFT SLASH        &kp ENTER
+                                             &mt LEFT_COMMAND TAB  &mt LEFT_SHIFT SPACE  &mo 1    &mo 2  &lt 4 SPACE  &mt LEFT_ALT ESCAPE
             >;
         };
 
