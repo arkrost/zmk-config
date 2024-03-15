@@ -69,10 +69,10 @@
             //                                   '--------+----------+----------'       '---------+----------+---------'
 
             bindings = <
-&none           &trans  &trans  &trans     &trans    &trans              &kp HOME  &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &kp MINUS  &kp PLUS
-&trans          &trans  &trans  &trans     &trans    &trans              &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans     &kp PIPE
-&kp LEFT_SHIFT  &trans  &trans  &trans     &trans    &trans              &trans    &trans          &none         &none            &kp UNDER  &kp EQUAL
-                                &kp LCTRL  &kp LALT  &kp LEFT_COMMAND    &trans    &trans          &trans
+&none           &trans  &trans    &trans          &trans     &trans              &kp HOME  &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &none   &none
+&trans          &trans  &kp PLUS  &kp MINUS       &kp EQUAL  &trans              &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &none
+&kp LEFT_SHIFT  &trans  &trans    &kp UNDERSCORE  &trans     &trans              &trans    &trans          &none         &none            &none   &none
+                                  &kp LCTRL       &kp LALT   &kp LEFT_COMMAND    &trans    &trans          &trans
             >;
         };
 
