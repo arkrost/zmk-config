@@ -26,7 +26,7 @@
 
         combo_lcmd {
             bindings = <&kp LEFT_COMMAND>;
-            key-positions = <13 14>;
+            key-positions = <14 15>;
         };
 
         combo_lalt {
