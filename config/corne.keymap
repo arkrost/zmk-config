@@ -19,24 +19,14 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_rcmd {
-            bindings = <&kp LEFT_COMMAND>;
-            key-positions = <20 21>;
-        };
-
-        combo_lcmd {
+        combo_cmd {
             bindings = <&kp LEFT_COMMAND>;
             key-positions = <14 15>;
         };
 
-        combo_lalt {
+        combo_alt {
             bindings = <&kp LEFT_ALT>;
-            key-positions = <26 27>;
-        };
-
-        combo_ralt {
-            bindings = <&kp LEFT_ALT>;
-            key-positions = <32 33>;
+            key-positions = <20 21>;
         };
 
         combo_adjust_layer {
