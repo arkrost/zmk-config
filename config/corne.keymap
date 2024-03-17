@@ -86,9 +86,9 @@
 
         space_layer {
             bindings = <
-&none           &none           &none           &kp UP_ARROW      &none            &none    &none             &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp P  &none           &none
-&none           &none           &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT_ARROW  &none    &kp SINGLE_QUOTE  &kp ENTER         &kp BACKSPACE      &kp O  &kp BACKSLASH   &none
-&kp LEFT_SHIFT  &kp LEFT_SHIFT  &none           &none             &none            &none    &none             &kp N             &none              &none  &kp LEFT_SHIFT  &kp LEFT_SHIFT
+&none           &none           &none           &kp UP_ARROW      &none            &none    &none             &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp P       &none           &none
+&none           &none           &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT_ARROW  &none    &kp SINGLE_QUOTE  &kp ENTER         &kp BACKSPACE      &kp ESCAPE  &kp BACKSLASH   &none
+&kp LEFT_SHIFT  &kp LEFT_SHIFT  &none           &none             &none            &none    &none             &kp N             &none              &none       &kp LEFT_SHIFT  &kp LEFT_SHIFT
                                                 &kp LEFT_COMMAND  &none            &none    &none             &none             &kp LEFT_ALT
             >;
         };
