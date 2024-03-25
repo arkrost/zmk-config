@@ -8,6 +8,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
 #define QWERTY 0
@@ -65,7 +66,7 @@
         lower_layer {
             bindings = <
 &none  &none             &none         &none             &none           &none    &kp ASTERISK  &kp N7        &kp N8        &kp N9  &kp PLUS    &none
-&none  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &none    &kp SLASH     &kp NUMBER_4  &kp N5        &kp N6  &kp MINUS   &none
+&none  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &mo 4    &kp SLASH     &kp NUMBER_4  &kp N5        &kp N6  &kp MINUS   &none
 &none  &none             &none         &none             &none           &none    &kp N0        &kp N1        &kp NUMBER_2  &kp N3  &kp PERIOD  &none
                                        &trans            &none           &none    &none         &none         &kp EQUAL
             >;
@@ -86,6 +87,15 @@
 &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none  &none  &none  &none  &none  &none
 &out OUT_TOG  &none         &none         &none         &none         &none           &none  &none  &none  &none  &none  &none
                                           &none         &none         &none           &none  &none  &none
+            >;
+        };
+
+        fn_layer {
+            bindings = <
+&trans  &trans  &trans  &trans     &trans          &trans    &kp F1            &kp F2        &kp F3            &kp F4   &trans  &trans
+&trans  &trans  &trans  &kt GLOBE  &kp LEFT_SHIFT  &trans    &kp F5            &kp F6        &kp F7            &kp F8   &trans  &trans
+&trans  &trans  &trans  &trans     &trans          &trans    &kp F9            &kp F10       &kp F11           &kp F12  &trans  &kp LEFT_SHIFT
+                        &trans     &trans          &trans    &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_CONTROL
             >;
         };
     };
