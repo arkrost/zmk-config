@@ -48,9 +48,9 @@
 
         raise_layer {
             bindings = <
-&none           &none      &none  &none      &none     &none               &kp MINUS  &kp EQUAL       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT    &kp DELETE
-&none           &none      &none  &none      &none     &none               &kp LEFT   &kp DOWN_ARROW  &kp UP_ARROW          &kp RIGHT_ARROW        &kp PIPE       &none
-&kp LEFT_SHIFT  &kp GRAVE  &none  &none      &none     &none               &kp CARET  &kp DOLLAR      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH  &none
+&none           &none      &none  &none      &none     &none               &kp MINUS  &kp EQUAL       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT       &kp DELETE
+&none           &none      &none  &none      &none     &none               &kp LEFT   &kp DOWN_ARROW  &kp UP_ARROW          &kp RIGHT_ARROW        &kp SINGLE_QUOTE  &none
+&kp LEFT_SHIFT  &kp GRAVE  &none  &none      &none     &none               &kp CARET  &kp DOLLAR      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH     &none
                                   &kp LCTRL  &kp LALT  &kp LEFT_COMMAND    &none      &none           &none
             >;
         };
