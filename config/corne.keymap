@@ -39,18 +39,18 @@
 
         lower_layer {
             bindings = <
-&kp ESCAPE      &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6             &kp N7         &kp N8             &kp N9                &kp N0                 &kp BACKSPACE
-&kp TAB         &kp EXCLAMATION  &kp AT_SIGN   &kp HASH      &kp DOLLAR    &kp PERCENT     &kp CARET                &kp AMPERSAND  &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none
-&kp LEFT_SHIFT  &none            &none         &none         &none         &none           &kp UNDERSCORE           &kp MINUS      &kp PLUS           &kp EQUAL             &kp PERIOD             &kp ENTER
-                                               &none         &none         &none           &mt RIGHT_COMMAND SPACE  &kp RIGHT_ALT  &kp RIGHT_CONTROL
+&kp ESCAPE  &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6             &kp N7         &kp N8             &kp N9                &kp N0                 &kp BACKSPACE
+&kp TAB     &kp EXCLAMATION  &kp AT_SIGN   &kp HASH      &kp DOLLAR    &kp PERCENT     &kp CARET                &kp AMPERSAND  &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none
+&none       &none            &none         &none         &none         &none           &kp UNDERSCORE           &kp MINUS      &kp PLUS           &kp EQUAL             &kp PERIOD             &kp ENTER
+                                           &none         &none         &none           &mt RIGHT_COMMAND SPACE  &kp RIGHT_ALT  &kp RIGHT_CONTROL
             >;
         };
 
         raise_layer {
             bindings = <
-&none             &none  &none  &none  &none               &none               &none     &kp LEFT_BRACKET  &kp UP_ARROW  &kp RIGHT_BRACKET  &none          &kp DELETE
-&kp LEFT_CONTROL  &none  &none  &none  &none               &none               &none     &kp LEFT_ARROW    &kp UP_ARROW  &kp RIGHT_ARROW    &kp BACKSLASH  &none
-&kp LEFT_SHIFT    &none  &none  &none  &none               &none               &kp HOME  &kp PAGE_DOWN     &kp PAGE_UP   &kp END            &none          &kp ENTER
+&none             &none  &none  &none  &none               &none               &none     &kp LEFT_BRACKET  &kp UP_ARROW    &kp RIGHT_BRACKET  &none          &kp DELETE
+&kp LEFT_CONTROL  &none  &none  &none  &none               &none               &none     &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW    &kp BACKSLASH  &none
+&kp LEFT_SHIFT    &none  &none  &none  &none               &none               &kp HOME  &kp PAGE_DOWN     &kp PAGE_UP     &kp END            &none          &kp ENTER
                                 &none  &mt LEFT_ALT SPACE  &kp LEFT_COMMAND    &none     &none             &none
             >;
         };
