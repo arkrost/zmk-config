@@ -35,15 +35,6 @@
             mods = <(MOD_LGUI)>;
             keep-mods = <(MOD_LGUI)>;
         };
-
-        ctrl_tab_bh: ctrl_tab_bh {
-            compatible = "zmk,behavior-mod-morph";
-            label = "CTRL_TAB_BH";
-            bindings = <&mt LEFT_CONTROL TAB>, <&kp LC(TAB)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
     };
 
     keymap {
@@ -51,10 +42,10 @@
 
         default_layer {
             bindings = <
-&kp ESCAPE            &kp Q  &kp W  &kp E             &kp R      &kp T           &kp Y      &kp U        &kp I            &kp O       &kp P          &kp BACKSPACE
-&ctrl_tab_bh          &kp A  &kp S  &kp D             &kp F      &kp G           &kp H      &kp J        &kp K            &kp L       &kp SEMICOLON  &mt RIGHT_GUI SQT
-&mt LEFT_SHIFT GRAVE  &kp Z  &kp X  &kp C             &kp V      &kp B           &kp N      &kp M        &kp COMMA        &kp PERIOD  &kp SLASH      &mt RIGHT_ALT ENTER
-                                    &kp LEFT_COMMAND  &kp SPACE  &kp LEFT_ALT    &space_bh  &lt 2 ENTER  &kp RIGHT_SHIFT
+&kp ESCAPE            &kp Q  &kp W  &kp E             &kp R      &kp T               &kp Y      &kp U        &kp I            &kp O       &kp P          &kp BACKSPACE
+&mt LEFT_CONTROL TAB  &kp A  &kp S  &kp D             &kp F      &kp G               &kp H      &kp J        &kp K            &kp L       &kp SEMICOLON  &mt RIGHT_GUI SQT
+&mt LEFT_SHIFT GRAVE  &kp Z  &kp X  &kp C             &kp V      &kp B               &kp N      &kp M        &kp COMMA        &kp PERIOD  &kp SLASH      &mt RIGHT_ALT ENTER
+                                    &kp LEFT_COMMAND  &kp SPACE  &mt LEFT_ALT TAB    &space_bh  &lt 2 ENTER  &kp RIGHT_SHIFT
             >;
         };
 
