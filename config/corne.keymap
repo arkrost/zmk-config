@@ -39,11 +39,10 @@
         ctrl_tab_bh: ctrl_tab_bh {
             compatible = "zmk,behavior-mod-morph";
             label = "CTRL_TAB_BH";
-            bindings = <&kp ESCAPE>, <&kp TAB>;
+            bindings = <&kp ESCAPE>, <&kp LC(TAB)>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
-            keep-mods = <(MOD_LCTL)>;
+            mods = <(MOD_LGUI)>;
         };
     };
 
