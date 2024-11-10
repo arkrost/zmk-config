@@ -70,10 +70,10 @@
 
         raise_layer {
             bindings = <
-&trans  &none  &none  &none   &none   &none           &none          &kp LEFT_BRACKET  &kp UP_ARROW    &kp RIGHT_BRACKET  &none          &kp DELETE
-&trans  &none  &none  &none   &none   &none           &kp BACKSPACE  &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW    &kp SQT        &trans
-&trans  &none  &none  &none   &none   &none           &kp HOME       &kp PAGE_DOWN     &kp PAGE_UP     &kp END            &kp BACKSLASH  &trans
-                      &trans  &trans  &kp LEFT_ALT    &none          &none             &none
+&trans  &none  &none  &none   &none   &none           &none     &kp LEFT_BRACKET  &kp UP_ARROW    &kp RIGHT_BRACKET  &none          &kp DELETE
+&trans  &none  &none  &none   &none   &none           &none     &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW    &none          &trans
+&trans  &none  &none  &none   &none   &none           &kp HOME  &kp PAGE_DOWN     &kp PAGE_UP     &kp END            &kp BACKSLASH  &trans
+                      &trans  &trans  &kp LEFT_ALT    &none     &none             &none
             >;
         };
 
