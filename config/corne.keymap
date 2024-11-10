@@ -23,11 +23,6 @@
             bindings = <&mo 3>;
             key-positions = <38 37>;
         };
-
-        combo_jk {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <19 20>;
-        };
     };
 
     behaviors {
@@ -66,19 +61,19 @@
 
         lower_layer {
             bindings = <
-&trans  &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6    &kp N7         &kp N8        &kp N9                &kp N0                 &trans
-&trans  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH      &kp DOLLAR    &kp PERCENT     &kp CARET       &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &none            &none         &none         &none         &none           &kp UNDERSCORE  &kp MINUS      &kp PLUS      &kp EQUAL             &kp PERIOD             &trans
-                                       &trans        &trans        &trans          &none           &none          &none
+&trans  &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6    &kp N7         &kp N8             &kp N9                &kp N0                 &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH      &kp DOLLAR    &kp PERCENT     &kp CARET       &kp AMPERSAND  &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans  &none            &none         &none         &none         &none           &kp UNDERSCORE  &kp MINUS      &kp PLUS           &kp EQUAL             &kp PERIOD             &trans
+                                       &trans        &trans        &trans          &trans          &trans         &kp RIGHT_COMMAND
             >;
         };
 
         raise_layer {
             bindings = <
-&trans  &none  &none  &none   &none   &none           &none     &kp LEFT_BRACKET  &kp UP_ARROW    &kp RIGHT_BRACKET  &none          &kp DELETE
-&trans  &none  &none  &none   &none   &none           &none     &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW    &kp SQT        &trans
-&trans  &none  &none  &none   &none   &none           &kp HOME  &kp PAGE_DOWN     &kp PAGE_UP     &kp END            &kp BACKSLASH  &trans
-                      &trans  &trans  &kp LEFT_ALT    &none     &none             &none
+&trans  &none  &none  &none   &none   &none           &none          &kp LEFT_BRACKET  &kp UP_ARROW    &kp RIGHT_BRACKET  &none          &kp DELETE
+&trans  &none  &none  &none   &none   &none           &kp BACKSPACE  &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW    &kp SQT        &trans
+&trans  &none  &none  &none   &none   &none           &kp HOME       &kp PAGE_DOWN     &kp PAGE_UP     &kp END            &kp BACKSLASH  &trans
+                      &trans  &trans  &kp LEFT_ALT    &none          &none             &none
             >;
         };
 
