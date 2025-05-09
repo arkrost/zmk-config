@@ -80,7 +80,7 @@
         right_layer {
             bindings = <
 &none  &trans  &trans  &trans  &trans          &trans    &kp NUMBER_6  &kp NUMBER_7   &kp NUMBER_8       &kp N9             &kp NUMBER_0       &none
-&none  &trans  &trans  &trans  &trans          &trans    &kp MINUS     &kp ENTER      &kp COLON          &kp LEFT_BRACKET   &kp RIGHT_BRACKET  &none
+&none  &trans  &trans  &trans  &trans          &trans    &kp MINUS     &kp ENTER      &kp SEMICOLON      &kp LEFT_BRACKET   &kp RIGHT_BRACKET  &none
 &none  &trans  &trans  &trans  &trans          &trans    &kp EQUAL     &kp RIGHT_ALT  &kp RIGHT_COMMAND  &kp RIGHT_CONTROL  &kp BACKSLASH      &none
                        &trans  &kp LEFT_SHIFT  &trans    &trans        &trans         &trans
             >;
