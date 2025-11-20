@@ -20,7 +20,7 @@
         compatible = "zmk,combos";
 
         combo_adjust_layer {
-            bindings = <&mo 3>;
+            bindings = <&mo 6>;
             key-positions = <38 37>;
         };
     };
@@ -52,34 +52,61 @@
 
         default_layer {
             bindings = <
-&mt LEFT_COMMAND ESCAPE  &kp Q  &kp W  &kp E         &kp R      &kp T    &kp Y      &kp U        &kp I            &kp O       &kp P          &kp BACKSPACE
-&mt LEFT_CONTROL TAB     &kp A  &kp S  &kp D         &kp F      &kp G    &kp H      &kp J        &kp K            &kp L       &kp SEMICOLON  &kp SQT
-&mt LEFT_SHIFT GRAVE     &kp Z  &kp X  &kp C         &kp V      &kp B    &kp N      &kp M        &kp COMMA        &kp PERIOD  &kp SLASH      &mt RIGHT_ALT ENTER
-                                       &ctrl_tab_bh  &kp SPACE  &mo 1    &space_bh  &lt 2 ENTER  &kp RIGHT_SHIFT
+&kp ESC               &kp Q  &kp W  &kp E  &kp R      &kp T    &kp Y  &kp U  &kp I      &kp O       &kp P          &kp BACKSPACE
+&kp TAB               &kp A  &kp S  &kp D  &kp F      &kp G    &kp H  &kp J  &kp K      &kp L       &kp SEMICOLON  &kp SQT
+&mt LEFT_SHIFT GRAVE  &kp Z  &kp X  &kp C  &kp V      &kp B    &kp N  &kp M  &kp COMMA  &kp PERIOD  &kp SLASH      &mt RIGHT_SHIFT ENTER
+                                    &mo 4  &kp SPACE  &mo 1    &mo 2  &mo 3  &mo 5
             >;
         };
 
         lower_layer {
             bindings = <
-&trans  &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6    &kp N7         &kp N8             &kp N9                &kp N0                 &trans
-&trans  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH      &kp DOLLAR    &kp PERCENT     &kp CARET       &kp AMPERSAND  &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &none            &none         &none         &none         &none           &kp UNDERSCORE  &kp MINUS      &kp PLUS           &kp EQUAL             &kp PERIOD             &trans
-                                       &trans        &trans        &trans          &trans          &trans         &kp RIGHT_COMMAND
+&trans  &none  &none             &none         &none             &none     &none          &kp N7  &kp N8  &kp N9  &kp N0      &trans
+&trans  &none  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &none     &none          &kp N4  &kp N5  &kp N6  &none       &trans
+&trans  &none  &none             &none         &none             &none     &none          &kp N1  &kp N2  &kp N3  &kp PERIOD  &trans
+                                 &trans        &trans            &trans    &kp LG(SPACE)  &none   &none
             >;
         };
 
         raise_layer {
             bindings = <
-&trans  &none  &none  &none   &none   &none           &none     &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp DELETE
-&trans  &none  &none  &none   &none   &none           &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW     &kp RIGHT_ARROW   &none              &trans
-&trans  &none  &none  &none   &none   &none           &kp HOME  &kp PAGE_DOWN   &kp PAGE_UP      &kp END           &kp BACKSLASH      &trans
-                      &trans  &trans  &kp LEFT_ALT    &none     &none           &none
+&trans  &trans  &trans            &trans        &trans            &trans    &trans  &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans  &trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &trans    &trans  &kp DOLLAR       &kp PERCENT   &kp CARET             &trans                 &trans
+&trans  &trans  &trans            &trans        &trans            &trans    &trans  &kp EXCLAMATION  &kp AT        &kp HASH              &trans                 &trans
+                                  &trans        &trans            &trans    &trans  &trans           &trans
+            >;
+        };
+
+        nav_layer {
+            bindings = <
+&trans  &none  &none             &none           &none             &none    &none     &none           &none         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp DELETE
+&trans  &none  &kp LEFT_CONTROL  &kp LEFT_ALT    &kp LEFT_COMMAND  &none    &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW   &none              &trans
+&trans  &none  &none             &none           &none             &none    &kp HOME  &kp PAGE_DOWN   &kp PAGE_UP   &kp END           &kp BACKSLASH      &trans
+                                 &kp LEFT_SHIFT  &trans            &none    &none     &none           &none
+            >;
+        };
+
+        right_layer {
+            bindings = <
+&none        &none           &none             &none         &none             &none    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LC(TAB)  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &none    &trans  &trans  &trans  &trans  &trans  &trans
+&none        &none           &none             &none         &none             &none    &trans  &trans  &trans  &trans  &trans  &trans
+                                               &none         &none             &none    &trans  &trans  &trans
+            >;
+        };
+
+        left_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &none  &none              &none          &kp LEFT_BRACE     &kp RIGHT_BRACE  &kp RA(BACKSPACE)
+&trans  &trans  &trans  &trans  &trans  &trans    &none  &kp RIGHT_COMMAND  &kp RIGHT_ALT  &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &none
+&trans  &trans  &trans  &trans  &trans  &trans    &none  &none              &none          &none              &none            &none
+                        &trans  &trans  &trans    &none  &none              &none
             >;
         };
 
         adjust_layer {
             bindings = <
-&sys_reset    &trans        &none         &none         &none         &none           &none  &none  &none  &none  &none  &none
+&sys_reset    &none         &none         &none         &none         &none           &none  &none  &none  &none  &none  &none
 &bt BT_CLR    &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0    &none  &none  &none  &none  &none  &none
 &out OUT_TOG  &none         &none         &none         &none         &none           &none  &none  &none  &none  &none  &none
                                           &none         &none         &none           &none  &none  &none
